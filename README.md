@@ -1,7 +1,7 @@
 <!---- Badges (substitua SEU_USUARIO e REPO) -->
-![GitHub Repo stars](https://img.shields.io/github/stars/cwgbittencourt/REPO?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/cwgbittencourt/REPO)
-![GitHub issues](https://img.shields.io/github/issues/cwgbittencourt/REPO)
+![GitHub Repo stars](https://img.shields.io/github/stars/cwgbittencourt/TelemetriaServidor?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/cwgbittencourt/TelemetriaServidor)
+![GitHub issues](https://img.shields.io/github/issues/cwgbittencourt/TelemetriaServidor)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 # TelemetriaServidor – Windows Service → SEQ
