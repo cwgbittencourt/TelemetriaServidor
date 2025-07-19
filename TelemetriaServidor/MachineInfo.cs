@@ -1,23 +1,26 @@
 ﻿using System.Management;
-/// <summary>
-/// @copilot: add an xml-doc comment including param and returns tags
-/// </summary>
+
 namespace TelemetriaServidor
 {
     /// <summary>
-    /// @copilot: add an xml-doc comment including param and returns tags
+    /// Classe utilitária para obter informações da máquina.
     /// </summary>
     public static class MachineInfo
     {
         /// <summary>
-        /// Total de RAM física em MB
-        /// @copilot: add an xml-doc comment including param and returns tags
+        /// Obtém o total de RAM física disponível na máquina, em megabytes (MB).
         /// </summary>
+        /// <remarks>
+        /// O valor é inicializado no carregamento da classe, utilizando a consulta WMI.
+        /// </remarks>
         public static readonly double TotalPhysicalMemoryMb;
 
         /// <summary>
-        /// @copilot: add an xml-doc comment including param and returns tags
+        /// Inicializa o valor de <see cref="TotalPhysicalMemoryMb"/> consultando a quantidade total de memória física.
         /// </summary>
+        /// <returns>
+        /// Não retorna valor diretamente. Inicializa o campo <see cref="TotalPhysicalMemoryMb"/> com o valor obtido ou 0 em caso de erro.
+        /// </returns>
         static MachineInfo()
         {
             try

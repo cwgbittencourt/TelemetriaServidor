@@ -45,7 +45,7 @@ no `appsettings.json`.*
     "WriteTo": [
       {
         "Name": "Seq",
-        "Args": { "serverUrl": "http://localhost:5341", "apiKey": "" }
+        "Args": { "serverUrl": "http://IP_DE_SEU_SEQ:5341", "apiKey": "" }
       }
     ]
   }

@@ -7,13 +7,17 @@ using System.Net.Sockets;
 namespace TelemetriaServidor
 {
     /// <summary>
-    /// @copilot: add an xml-doc comment including param and returns tags
+    /// Classe utilitária para obter informações de rede do servidor.
     /// </summary>
     public static class NetworkInfo
     {
         /// <summary>
-        /// @copilot: add an xml-doc comment including param and returns tags
+        /// Obtém o endereço IPv4 local da máquina, excluindo endereços de loopback.
         /// </summary>
+        /// <param name="none">Este método não recebe parâmetros.</param>
+        /// <returns>
+        /// Uma string representando o endereço IPv4 local, ou "0.0.0.0" se não for encontrado.
+        /// </returns>
         public static string GetLocalIPv4()
         {
             var host = Dns.GetHostEntry(Dns.GetHostName());

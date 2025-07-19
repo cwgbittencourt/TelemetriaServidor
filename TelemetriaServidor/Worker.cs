@@ -1,5 +1,4 @@
-﻿using System.Runtime.Versioning;
-using System.ServiceProcess;
+﻿using System.ServiceProcess;
 using TelemetriaServidor.Interface;
 
 namespace TelemetriaServidor
@@ -122,7 +121,6 @@ namespace TelemetriaServidor
         /// <param name="value">Valor da métrica a ser registrada.</param>
         /// <param name="ts">Timestamp da coleta da métrica.</param>
         /// <returns>Não retorna valor; apenas realiza o registro da métrica no log.</returns>
-        /// @copilot: add an xml-doc comment including param and returns tags
         /// </summary>
         private void LogMemDerived(string name, double value, DateTime ts) =>
     _log.LogInformation("Metric {MetricName} {Value:0.##} Type {MetricType} Timestamp {Timestamp:O}",
@@ -136,7 +134,6 @@ namespace TelemetriaServidor
         /// <param name="value">Valor da métrica a ser registrada.</param>
         /// <param name="ts">Timestamp da coleta da métrica.</param>
         /// <returns>Não retorna valor; apenas realiza o registro da métrica no log.</returns>
-        /// @copilot: add an xml-doc comment including param and returns tags
         /// </summary>
         private void LogDiskMetric(string name, double value, DateTime ts) =>
             _log.LogInformation("Metric {MetricName} {Value:0.##} Type {MetricType} Timestamp {Timestamp:O}",
@@ -169,7 +166,6 @@ namespace TelemetriaServidor
         /// <summary>
         /// Retorna os <paramref name="numDigits"/> dígitos mais significativos de <paramref name="value"/>.
         /// Ex.: value=32500.207, numDigits=2 → retorna 32
-        /// @copilot: add an xml-doc comment including param and returns tags
         /// </summary>
         private static int GetLeadingDigits(double value, int numDigits = 2)
         {
