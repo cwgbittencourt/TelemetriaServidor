@@ -45,7 +45,7 @@ Abra `` e altere a URL em **Serilog → WriteTo → Seq → serverUrl**  �
 }
 ```
 
-> ⚠️ O serviço precisa ter acesso HTTP (ou HTTPS) até a porta 5341 do SEQ.
+> ⚠️ O serviço precisa ter acesso HTTP (ou HTTPS) até a porta 5341 do SEQ. Devem no mínimo estar na mesma rede caso o SEQ não seja externo.
 
 ### 2.2 Adicionar uma nova métrica
 
@@ -61,7 +61,7 @@ Para coletar **% Privileged Time** do processador como `CpuKernel`:
 }
 ```
 
-Coloque o bloco acima dentro do array **Telemetry → Metrics** e reinicie o serviço.
+Coloque o bloco acima dentro do array **Telemetry → Metrics** no arquivo appsettings.json e reinicie o serviço.
 
 ⚠️ Não encontrou sua NIC?
 
