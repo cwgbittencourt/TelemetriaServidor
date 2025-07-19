@@ -129,9 +129,9 @@ Abaixo, duas telas reais capturadas do SEQ após 15 min de coleta:
 
 | Dashboard | Eventos detalhados |
 | --------- | ------------------ |
-|           |                    |
+|![Dashboard](docs/dashboard.png)           | ![Eventos](docs/eventos.png)                   |
 
-> Coloque as imagens em `` ou ajuste o caminho caso use outra pasta.
+
 
 ---
 
