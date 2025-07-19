@@ -45,7 +45,7 @@ Abra `` e altere a URL em **Serilog → WriteTo → Seq → serverUrl**  �
 }
 ```
 
-> ⚠️ O serviço precisa ter acesso HTTP (ou HTTPS) até a porta 5341 do SEQ. Devem no mínimo estar na mesma rede caso o SEQ não seja externo.
+> ⚠️ O serviço precisa ter acesso HTTP (ou HTTPS) até a porta 5341 do SEQ. Devem no mínimo estar na mesma rede caso o SEQ não seja em uma url publica.
 
 ### 2.2 Adicionar uma nova métrica
 
