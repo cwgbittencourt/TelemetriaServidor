@@ -69,10 +69,10 @@ Coloque o bloco acima dentro do array **Telemetry → Metrics** no arquivo apps
 > vir diferente ou conter traço extra.  Abra um prompt e execute:
 >
 > ```powershell
-> # lista todos os contadores de rede
-> typeperf -qx "Network Interface"
-> # ou, no PowerShell moderno:
-> (Get-Counter -ListSet "Network Interface").Counter
+> # lista o adaptador de rede utilizado
+>  (Get-NetAdapterStatistics -Name (Get-NetRoute -DestinationPrefix '0.0.0.0/0','::/0' |
+>  Sort-Object RouteMetric | Select-Object -First 1).InterfaceAlias) |
+>  Select Name, OutboundBytes, InboundBytes
 > ```
 >
 > Copie o texto exato entre aspas que aparece após `Network Interface(` e cole
